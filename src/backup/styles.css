@@ -1,0 +1,71 @@
+/* style.css */
+
+body {
+    margin: 0;
+  }
+  
+  .chat-container {
+    display: flex;
+    height: 100vh;
+    background-color: #050509;
+  }
+  
+  .sidebar {
+   /* 20% of the space */
+    width: 20%;
+    height: 100%;
+    background-color: #0c0c15;
+  }
+  
+  /* .main-content {
+    flex: 1;
+  }
+   */
+  
+  /* Chat container styles */
+  .main-content {
+    flex: 1;
+      height: 80%;
+      /* overflow-y: scroll; */
+      padding-top: 8%;
+    }
+    
+    /* Chat box styles */
+    .chat-box {
+      width: 60%;
+      margin: 0 auto;
+      padding: 6px;
+    }
+    
+    /* Message container styles */
+    .message-container {
+      display: flex;
+      margin-bottom: 12px;
+      padding: 10px;
+  
+    }
+    
+    /* Role icon styles */
+    .role-icon {
+      margin-right: 8px;
+      padding: 6px;
+      background-color: #6b7280; /* Replace with your color */
+      color: #fff; /* Replace with your color */
+      border-radius: 50%;
+      height: 100%;
+    }
+  
+    .message {
+      /* Add common message styles here */
+      color: #fff; /* Replace with your color */
+      line-height: 1.6;
+    }
+    .test {
+      background: rgb(81, 81, 207);
+      border-radius: 10px;
+    }
+  
+  
+  
+  
+    
