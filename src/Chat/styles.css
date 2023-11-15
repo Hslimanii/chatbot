@@ -12,7 +12,7 @@
   display: flex;
   align-items: center;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 4px;
   max-width: 400px; /* Adjust as needed */
   margin: 20px auto; /* Adjust as needed */
   background-color: #3f4142;
