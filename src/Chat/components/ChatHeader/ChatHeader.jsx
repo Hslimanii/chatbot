@@ -1,6 +1,6 @@
 import React from "react";
 import "./ChatHeader.css";
-import { SettingsIcon } from "./Icons";
+import { SettingsIcon } from "../Icons/Icons";
 
 const ChatHeader = () => {
   return (

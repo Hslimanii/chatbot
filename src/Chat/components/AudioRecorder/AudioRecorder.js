@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import MicRecorder from 'mic-recorder-to-mp3';
-import { MicStartIcon, MicStopIcon } from './Icons';
+import { MicStartIcon, MicStopIcon } from '../Icons/Icons';
 import "./AudioRecorder.css";
 
 const Mp3Recorder = new MicRecorder({ bitRate: 128 });
 
-const AudioRecorder = () => {
+const AudioRecorder = ({setText}) => {
     const [isRecording, setIsRecording] = useState(false);
     const [blobURL, setBlobURL] = useState('');
     const [isBlocked, setIsBlocked] = useState(false);
@@ -33,6 +33,7 @@ const AudioRecorder = () => {
                 setShowPopover(true); // Show popover after stopping recording
             })
             .catch((e) => console.log(e));
+            setText("Audio Added")
     };
 
     useEffect(() => {

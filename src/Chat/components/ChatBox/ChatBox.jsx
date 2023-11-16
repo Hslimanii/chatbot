@@ -1,12 +1,10 @@
 import React from "react";
-import { RobotIcon, UserIcon } from "./Icons";
+import { RobotIcon, UserIcon } from "../Icons/Icons";
 import "./ChatBox.css";
-import AudioRecorder from "./AudioRecorder";
 
 const ChatBox = ({ currentChat }) => {
   return (
     <>
-    {/* <AudioRecorder /> */}
       {currentChat.length > 0 ? (
         <div className="chat-box">
           {currentChat.map((item, index) => (

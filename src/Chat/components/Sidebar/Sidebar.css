@@ -102,3 +102,12 @@
     width: 30px; /* Adjust as needed */
     height: 30px; /* Adjust as needed */
   }
+
+  .new-chat-button{
+    background-color: #3f4142;
+    color: white;
+    border: none;
+    padding: 7px;
+    margin-bottom: 7px;
+    cursor: pointer;
+  }

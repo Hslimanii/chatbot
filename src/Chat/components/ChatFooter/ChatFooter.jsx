@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { SendIcon, UploadIcon } from "./Icons";
+import { SendIcon, UploadIcon } from "../Icons/Icons";
 import "./ChatFooter.css";
-import AudioRecorder from "./AudioRecorder";
+import AudioRecorder from "../AudioRecorder/AudioRecorder";
 
-const ChatFooter = () => {
+const ChatFooter = ({onSendMessage }) => {
   const [text, setText] = useState("");
   const [rows, setRows] = useState(1);
   const minRows = 1;
@@ -17,13 +17,23 @@ const ChatFooter = () => {
     const file = event.target.files[0];
     console.log("Uploaded file:", file);
   };
+
+  const sendMessage = () => {
+    if (text.trim() !== "") {
+      onSendMessage({ role: "user", message: text, timestamp: new Date().toISOString() });
+      setText("");
+      setRows(1);
+    }
+  };
   return (
     <div className="chat-input">
       <div className="chat-input-wrapper">
         <div className="input-container">
           {/* icons */}
+          <span onClick={sendMessage}>
           <SendIcon />
-          <AudioRecorder />
+          </span>
+          <AudioRecorder setText={setText} />
           <label htmlFor="file-input">
             <UploadIcon />
           </label>
@@ -38,6 +48,7 @@ const ChatFooter = () => {
               type="text"
               className="textarea_class"
               rows={rows}
+              value={text}
               onChange={handleChange}
               placeholder="Type a message..."
             />
