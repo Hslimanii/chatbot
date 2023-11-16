@@ -1,0 +1,69 @@
+.chat-box {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+  padding: 6px;
+  overflow-y: scroll;
+  /* Hide the scrollbar for webkit browsers (Chrome, Safari) */
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+/* Hide the scrollbar for non-webkit browsers (Firefox) */
+.chat-box::-webkit-scrollbar {
+  width: 3px; /* Adjust as needed */
+  padding: 50px !important;
+  margin: 50px !important;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #3f4142;
+  padding: 50px !important;
+  margin: 50px !important;
+}
+
+.chat-box::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.message-container {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+.message-container.user {
+  flex-direction: row-reverse; /* Change the direction to reverse the order of flex items */
+  justify-content: flex-start; /* Align user's messages to the left */
+}
+
+.message-container.user .role-icon {
+  margin-left: 0; /* Remove margin-left for user's role-icon */
+  margin-right: -3px; /* Add margin-right for user's role-icon */
+}
+
+.message-container.user .message {
+  margin-left: 8px; /* Add margin-left for user's message */
+  margin-right: 8px; /* Remove margin-right for user's message */
+}
+
+.role-icon {
+  margin-right: 8px;
+  padding: 6px;
+  background-color: #525151; /* Replace with your color */
+  color: #fff; /* Replace with your color */
+  border-radius: 50%;
+  height: 100%;
+}
+
+.message {
+  /* Add common message styles here */
+  color: #fff; /* Replace with your color */
+  line-height: 1.6;
+}
+.bot-message-container-color {
+  background: #3f4142;
+}
+
+.input_small {
+  color: white;
+}

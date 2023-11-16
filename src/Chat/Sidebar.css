@@ -1,0 +1,105 @@
+.sidebar {
+    width: 20%;
+    background-color: rgb(37, 38, 43);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .sidebar-header {
+    flex: 0.1;
+    /* margin: 0 10px; */
+    margin:auto;
+  }
+  
+  .sidebar-main-content {
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    /* scroll */
+    overflow-y: scroll;
+  }
+  
+  .selected{
+    background-color: #3f4142c9;
+  }
+  
+  /* scrollbar for sidebar-main-content */
+  .sidebar-main-content::-webkit-scrollbar {
+    width: 3px; /* Adjust as needed */
+    padding: 50px !important;
+    margin: 50px !important;
+  }
+  
+  .sidebar-main-content::-webkit-scrollbar-thumb {
+    background-color: #3f4142;
+    padding: 50px !important;
+    margin: 50px !important;
+  }
+  
+  .main-content-section {
+    flex: 0.7;
+    padding: 10px;
+  }
+  .main-content-section h2{
+    color:#a9a9b4;
+  }
+  .main-content-section li{
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .main-content-section h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .main-content-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .main-content-section li {
+    margin-bottom: 8px;
+  }
+  
+  .footer {
+    flex: 0.1;
+    padding: 10px;
+    border-top: 1px solid #6e6e6ec1;
+  }
+
+
+  .profile-message-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 400px; /* Adjust as needed */
+    margin: 20px auto; /* Adjust as needed */
+    background-color: #3f4142;
+    color: white;
+  }
+  
+  .message-image {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .message-text {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  .message-icon {
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+  }
