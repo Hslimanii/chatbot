@@ -37,7 +37,7 @@ const AudioRecorder = ({setText}) => {
     };
 
     useEffect(() => {
-        navigator.getUserMedia(
+        navigator?.getUserMedia(
             { audio: true },
             () => {
                 console.log('Permission Granted');

@@ -59,6 +59,7 @@
   /* Add common message styles here */
   color: #fff; /* Replace with your color */
   line-height: 1.6;
+  white-space: pre-line;
 }
 .bot-message-container-color {
   background: #3f4142;
