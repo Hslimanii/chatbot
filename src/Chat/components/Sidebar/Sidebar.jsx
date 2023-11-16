@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import { JeraLogo, LogoutIcon } from "../Icons/Icons";
-const Sidebar = ({ currentChat, setCurrentChat, chat, chat2, chat3, onNewChatClick, historyData  }) => {
+const Sidebar = ({ setCurrentChat, chat, chat2, chat3, onNewChatClick, historyData  }) => {
   const [selectedItem, setSelectedItem] = useState("1");
 
 
