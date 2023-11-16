@@ -49,6 +49,7 @@
   margin: 20px !important;
 }
 .iconSend,
+.iconMicroStop,
 .iconMicro,
 .iconUpload {
   position: absolute;
@@ -70,4 +71,17 @@
 .iconUpload {
   left: 95%;
   margin-left: -60px;
+}
+.iconMicroStop{
+  left: 95%;
+  margin-left: -30px;
+  animation: flash 1s infinite alternate; /* Flashing animation */
+}
+@keyframes flash {
+  from {
+    color: white;
+  }
+  to {
+    color: red;
+  }
 }

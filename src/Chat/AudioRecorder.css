@@ -1,0 +1,24 @@
+.popover {
+    position: fixed;
+    top: 75%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    background-color: rgb(36 38 43 / 97%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .close-btn:hover {
+    color: #ccc;
+  }
+  
